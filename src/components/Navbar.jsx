@@ -9,13 +9,13 @@ const Navbar = () => {
       <div className="flex items-center">
         <h1 className="text-[#50382C] font-medium md:text-[48px] text-[24px]" >Coffee</h1>
       </div>
-      <div className="flex flex-row justify-center items-center invisible md:visible">
-        <ul className=" flex flex-row text-textColor md:text-[20px] font-normal md:gap-4 gap-2">      
+      <div className="flex flex-row justify-center items-center">
+        <ul className="flex flex-row text-textColor md:text-[20px] font-normal md:gap-4 gap-2 invisible md:visible">      
           <li className="cursor-pointer">
           Home
           </li>
-          <li className="cursor-pointer">
-            Products
+          <li className="cursor-pointer" >
+             Products
           </li>
           <li className="cursor-pointer">
             Landing
@@ -27,7 +27,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center md:gap-4 gap-2 cursor-pointer">
       <TfiShoppingCart size={20}/>
-      <HiOutlineMenu size={20}/>
+      <HiOutlineMenu size={20} className="visible md:invisible"/>
       </div>
     </div>
   );
